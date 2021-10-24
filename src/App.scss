@@ -1,0 +1,54 @@
+.app {
+  margin: 20px;
+  color: #000;
+  font-size: 16px;
+  width: fit-content;
+
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  .control-panel {
+    padding: 20px;
+
+    label {
+      margin-right: 6px;
+    }
+    
+    .item {
+      margin: 0 12px 12px 0;
+    }
+    
+    .select {
+      padding: 6px;
+    }
+  }
+
+  .parent-panel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .app {
+    .parent-panel {
+      flex-direction: column;
+    }
+  }
+
+  .widget {
+    header {
+      .expandCollapse {
+        display: block;
+      }
+    }
+  }
+}
+
+
